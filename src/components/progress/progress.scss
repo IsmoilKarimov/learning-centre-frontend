@@ -1,0 +1,92 @@
+@import '../../assets/style/var.scss';
+.mtn .progress {
+    margin-top: 0;
+}
+.progress {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 71px;
+    &__title {
+        font-weight: 700;
+        color: #11142D;
+    }
+    &__month {
+        color: #92929D;
+    }
+    &__line {
+        margin-top: 20px;
+        border: 1px solid #E1E1FB;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -4.5px;
+        margin-left: -4.5px;
+    }
+    &__col {
+        @include fb (14.2857%);
+        padding: 4.5px;
+    }
+    &__item {
+        display: flex;
+        background-color: #F7F7FC;
+        aspect-ratio: 1/1;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        &.week {
+            background-color: unset;
+            color: #9A9AB0;
+            font-weight: 500;
+        }
+        &.mark__1 {
+            background-color: #D9F2EC;
+        }
+        &.mark__2 {
+            background-color: #77CFBB;
+        }
+        &.mark__3 {
+            background-color: #42BDA1;
+        }
+        &.mark__4 {
+            background-color: #3CAA91;
+        }
+        &.mark__5 {
+            background-color: #287161;
+        }
+    }
+    &__info {
+        display: flex;
+        margin-top: 21px;
+        justify-content: flex-end;
+        align-items: center;
+        &__title {
+            color: #9A9AB0;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0px 8px;
+        }
+        &__card {
+            width: 24px;
+            height: 24px;
+            margin: 0px 2px;
+            border-radius: 4px;
+            &.mark__1 {
+                background-color: #D9F2EC;
+            }
+            &.mark__2 {
+                background-color: #77CFBB;
+            }
+            &.mark__3 {
+                background-color: #42BDA1;
+            }
+            &.mark__4 {
+                background-color: #3CAA91;
+            }
+            &.mark__5 {
+                background-color: #287161;
+            }
+        }
+    }
+}

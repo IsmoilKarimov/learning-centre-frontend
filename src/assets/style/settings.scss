@@ -1,0 +1,65 @@
+
+.settings {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    p {
+        color: #11142D;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    &__line {
+        height: 1px;
+        background-color: #E1E1FB;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+    &__input {
+        label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 16px;
+            display: block; 
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            display: block;
+            background-color: #F7F7FC;
+            padding: 18px 24px;
+            color: #11142D;
+            font-size: 16px;
+            border-radius: 8px;
+            &.mb {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .link.save {
+        background-color: #F04461;
+        font-weight: 700;
+        font-size: 16px;
+        &:hover {
+            background-color: #bd1531;
+        }
+    }
+
+    &__menu {
+        li {
+            margin-bottom: 24px;
+            a {
+                color: #92929D;
+                font-size: 18px;
+                font-weight: bold;
+                &.active {
+                    color: #11142D;
+                }
+            }
+        }
+    }
+}

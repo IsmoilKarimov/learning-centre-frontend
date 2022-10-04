@@ -1,0 +1,16 @@
+
+$color: #5541D7;
+
+@mixin bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin fb($w) {
+    flex-basis: $w;
+    max-width: $w;
+    width: $w;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mulish:wght@400;700&family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');

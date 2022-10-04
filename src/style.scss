@@ -1,0 +1,97 @@
+@import './assets/style/var.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #F7F7FC;
+    color: #11142D;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #11142D;
+}
+button,
+input {
+    background-color: unset;
+    border: 0;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+.main {
+    display: flex;
+}
+.link {
+    position: relative;
+    padding: 14px 24px;
+    background-color: $color;
+    display: inline-block;
+    color: #fff;
+    border-radius: 8px;
+    transition: .4s;
+    &:hover {
+        background-color: darken($color,15%);
+    }
+}
+.row {
+    display: flex;
+    margin-right: -16px;
+    margin-left: -16px;
+    flex-wrap: wrap;
+}
+.btitle {
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.wrapper {
+    @include fb(calc(100vw - 256px));
+    height: calc(100vh - 71px);
+    overflow: auto;
+    padding: 32px; 
+}
+
+.col-8 {
+    @include fb(66.66%);
+    padding: 0px 16px;
+    margin-bottom: 18px;
+}
+.col-4 {
+    @include fb(33.33%);
+    padding: 0px 16px;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.more {
+    color: $color;
+    font-size: 16px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        color: #92929D;
+        margin-right: 40px;
+        &.active {
+            color: #11142D;
+        }
+    }
+}

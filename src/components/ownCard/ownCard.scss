@@ -1,0 +1,54 @@
+@import '../../assets/style/var.scss';
+
+.owncard {
+    background-color: #fff;
+    padding: 24px 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    &__img {
+        height: 160px;
+        aspect-ratio: 1/1;
+        @include bg;
+        // margin-right: 24px;
+    }
+    &__info {
+        @include fb(calc(100% - 160px));
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    &__text {
+        color: #92929D;
+        font-size: 16px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        align-items: center;
+    }
+    &__count {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    &__status {
+        @include fb(322px)
+    }
+    &__progress {
+        position: relative;
+        height: 4px;
+        background-color: #E2E2EA;
+        border-radius: 2px;
+    }
+    &__line {
+        height: 4px;
+        background-color: $color;
+    }
+}

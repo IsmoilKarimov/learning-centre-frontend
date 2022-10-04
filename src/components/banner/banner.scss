@@ -1,0 +1,35 @@
+ @import '../../assets/style/var.scss';
+
+ .banner {
+    height: 296px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;              
+    @include bg;
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+        display: block;
+    }
+    &__title {
+        font-size: 48px;
+        margin-bottom: 8px;
+        position: relative;
+    }
+    &__text {
+        margin-bottom: 32px;
+        font-size: 16px;
+        color: #92929D;
+        position: relative;
+    }
+ }

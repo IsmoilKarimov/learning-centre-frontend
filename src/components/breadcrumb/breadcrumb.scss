@@ -1,0 +1,23 @@
+@import '../../assets/style/var.scss';
+.breadcrumbs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    a{
+        margin-left: 12px;
+        color: #92929D;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        &::before{
+            content: '';
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+            opacity: .3;
+            @include bg;
+            background-image: url('../../assets/img/angle-right-solid.svg');
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+.search {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    &__btn {
+        font-size: 20px;
+        width: 24px;
+        height: 24px;
+        color: #E2E2EA;
+        margin-right: 12px;
+    }
+    &__inp {
+        flex-basis: 100%;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}

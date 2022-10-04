@@ -1,0 +1,63 @@
+@import  '../../assets/style/var.scss' ;
+.header {
+    background-color: #fff;
+    padding: 15px 50px 15px 46px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1
+    ;
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        &--icon {
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #F7F7FC;
+            border-radius: 8px;
+            font-size: 18px;
+            color: $color;
+        }
+    }
+    &__notif,
+    &__likes {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 30px;
+        color: #9A9AB0;
+        font-size: 20px;
+        transition: .2s;
+        &:hover {
+            color: $color;
+        }
+    }
+    &__notif {
+        margin-left: 0;
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        &--image {
+            @include bg;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+        &--name {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &--email {
+            color: #9A9AB0;
+            font-size: 12px;
+        }
+    }
+}
